@@ -1,0 +1,30 @@
+name: 'Microsoft Azure Container Registry Login'
+author: 'Lars Gohr'
+branding:
+  icon: 'log-in'
+  color: 'blue'
+description: 'Logs into ACR and provides Docker credentials'
+inputs:
+  service_principal:
+    description: 'The ACR service principal to use for login'
+    required: true
+  service_principal_password:
+    description: 'The password of the service principal'
+    required: true
+  tenant:
+    description: 'The ACR tenant to use for login'
+    required: true
+  registry:
+    description: 'The ACR registry to use'
+    required: true
+  repository:
+    description: 'The ACR repository to use'
+    required: true
+outputs:
+  username:
+    description: 'The username for logging in'
+  password:
+    description: 'The password for logging in'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
