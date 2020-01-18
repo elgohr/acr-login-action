@@ -2,7 +2,7 @@
 
 [![Actions Status](https://github.com/elgohr/acr-login-action/workflows/Test/badge.svg)](https://github.com/elgohr/acr-login-action/actions)
 
-This Action for Docker logs into [Microsoft ACR](https://azure.microsoft.com/en-us/services/container-registry/) and gets the timely bound credentials for Docker.
+This Action for Docker logs into [Microsoft Azure Container Registry](https://azure.microsoft.com/en-us/services/container-registry/) and gets the timely bound credentials for Docker.
 
 ## Usage
 
