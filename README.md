@@ -31,7 +31,7 @@ jobs:
         name: myDocker/repository
         username: ${{ steps.ecr.outputs.username }}
         password: ${{ steps.ecr.outputs.password }}
-        registry: ${{ secrets.REPOSITORY }}
+        registry: ${{ secrets.REGISTRY }}
 ```
 
 ## Mandatory arguments
